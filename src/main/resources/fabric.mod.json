@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "blackholedislocator",
+  "version": "${version}",
+  "name": "Oritech Black Hole Dislocator",
+  "description": "Oritech Black Hole Dislocator - An item that can be used to remove Black Holes from the World and have them for relocation.",
+  "authors": [
+    "MrAmericanMike"
+  ],
+  "contact": {
+    "homepage": "https://www.mramericanmike.top",
+    "sources": ""
+  },
+  "license": "LGPL-3.0-only",
+  "icon": "assets/blackholedislocator/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "top.mramericanmike.blackholedislocator.BlackHoleDislocator"
+    ]
+  },
+  "mixins": [],
+  "depends": {
+    "fabricloader": ">=0.18.2",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
