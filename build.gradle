@@ -11,7 +11,12 @@ base {
 }
 
 repositories {
+    maven {
+        name = "BlameJared"
+        url = "https://maven.blamejared.com"
+    }
 }
+
 
 dependencies {
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
@@ -19,6 +24,14 @@ dependencies {
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+
+    // Mojmaps - ModDevGradle
+//    implementation "rearth.oritech:oritech-common-1.21.1:1.0.0-rc2"
+    // Intermediary - Architectury Loom
+//    modImplementation "rearth.oritech:oritech-common-1.21.1-intermediary:1.0.0-rc2"
+    // Fabric Loom or Architectury Loom
+//    modImplementation "rearth.oritech:oritech-fabric-1.21.1:1.0.0-rc2"
+
 }
 
 processResources {
